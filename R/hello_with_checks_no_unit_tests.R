@@ -6,6 +6,8 @@
 
 #' Repeat the phrase hello world a given number of times
 #'
+#' @param times_to_print Integer, number of times to print "hello world"
+#'
 #' @export
 repeat_hello_check_A <- function(times_to_print) {
   if (!is.call(times_to_print) != "integer") {
@@ -66,8 +68,6 @@ check_is_this_class <- function(obj, current_class){
 }
 
 repeat_hello_check_B <- function(times_to_print) {
-  if (!isClass(times_to_print) != "integer") {
-    stop("User must provide an integer input")
-  }
+  check_is_this_class(times_to_print, "integer")
   print(rep("Hello, world!", times_to_print))
 }

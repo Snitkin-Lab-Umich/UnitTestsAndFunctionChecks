@@ -74,10 +74,10 @@ repeat_hello_check_B <- function(times_to_print) {
 
 add_vectors_check_class <- function(vec1, vec2){
   if (!(is_this_class(vec1, "numeric") |  is_this_class(vec1, "logical"))) {
-    stop("Input vector 1 incorrect class")
+    stop("Input vector 1 should be a numeric or logical")
   }
   if (!(is_this_class(vec2, "numeric") |  is_this_class(vec2, "logical"))) {
-    stop("Input vector 2 incorrect class")
+    stop("Input vector 2 should be a numeric or logical")
   }
   return(vec1 + vec2)
 }

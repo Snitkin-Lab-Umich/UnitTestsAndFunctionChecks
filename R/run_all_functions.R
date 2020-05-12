@@ -7,14 +7,18 @@ run_all_hello <- function() {
   add_vectors(1:3, 1:3)
   add_vectors(c(TRUE, TRUE, FALSE), c(TRUE, FALSE, FALSE))
   add_vectors(1:3, 1:6)
+  add_vectors(rep("foo"), rep("bar"))
 
   add_vectors_check_class(1:3, 1:3)
   add_vectors_check_class(c(TRUE, TRUE, FALSE), c(TRUE, FALSE, FALSE))
   add_vectors_check_class(1:3, 1:6)
+  add_vectors_check_class(rep("foo"), rep("bar"))
+
 
   add_vectors_check_class_and_length(1:3, 1:3)
   add_vectors_check_class_and_length(c(TRUE, TRUE, FALSE), c(TRUE, FALSE, FALSE))
   add_vectors_check_class_and_length(1:3, 1:6)
+  add_vectors_check_class_and_length(rep("foo"), rep("bar"))
 
 
   repeat_hello_check_A(1)
